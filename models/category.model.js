@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
-const objectId = mongoose.Schema.Types.objectId;
+const objectId = mongoose.Schema.Types.ObjectId;
 
 const categorySchema = new Schema({
     _id:{type: objectId, auto: true},
@@ -12,6 +12,19 @@ const categorySchema = new Schema({
 
 
 
+
+
+
 //Defining the schema for category model and categories is the collection name
 const category = mongoose.model('categories',categorySchema)
 module.exports = category;
+
+
+
+
+
+
+
+
+
+
